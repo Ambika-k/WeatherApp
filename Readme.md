@@ -3,11 +3,21 @@
 This is a Springboot application and is used to provide product and weather services to user. Product and weather services were independent of each other.
 This application consists of Weather app
 
+
+
+### PREREQUISITES:
+ * JDK 1.8.X 
+ * Maven 3.3.X 
+ * Open weather map API keys 
+### Generating keys 
+* Visit https://openweathermap.org/appid 
+* SignUp, Select the package and generate API keys
+
 ### WEATHER MODULE
 This module is making use of Thymeleaf template.
 It consists of two methods.
-*	CityForm : 
-GET request => http://localhost:8081/weather
+####	CityForm : 
+* GET request => http://localhost:8081/weather
 When we make this request , an template will be displayed to enter a city name and when the user clicks on submit then getWeather method will be executed.
 *	getWeather:
 This method retrieves the city from FormCityAttribute, url and apikey from application.properties.
@@ -19,13 +29,5 @@ City, Latitude, Longitude, Weather description.
 
 * weatherDetails.html is used to make thymeleaf template for getWeathermethod.
 
-
-### PREREQUISITES:
- * JDK 1.8.X 
- * Maven 3.3.X 
- * Open weather map API keys 
-### Generating keys 
-* Visit https://openweathermap.org/appid 
-* SignUp, Select the package and generate API keys
 
 
