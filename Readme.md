@@ -28,11 +28,14 @@ It consists of two methods.
 * Based on url and apikey , it gets access to OpenWeatherAPI and retrieves the weather details from it based on city.
 
 #### Following details will be displayed:
-City, Latitude, Longitude, Weather description.
+* City, Latitude, Longitude, Weather description.
 
-* formData.html is used to make thymeleaf template for CityForm method.
 
-* weatherDetails.html is used to make thymeleaf template for getWeathermethod.
+#### formData.html 
+* Is used to make thymeleaf template for CityForm method.
+
+#### weatherDetails.html 
+* Is used to make thymeleaf template for getWeathermethod.
 
 
 
