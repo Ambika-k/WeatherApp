@@ -18,7 +18,7 @@ This module is making use of Thymeleaf template.
 It consists of two methods.
 * CityForm
 * getWeather
-####	[INPUT] CityForm : 
+#### CityForm : 
 * GET request => http://localhost:8081/weather
 * When we make this request , an template will be displayed to enter a city name and when the user clicks on submit then getWeather method will be executed.
 * Download/Clone the project on to your local machine.
