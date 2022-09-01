@@ -10,6 +10,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.List;
 import java.util.Map;
 
@@ -25,6 +30,7 @@ public class Weather implements Serializable {
 	private String name;
 	private double lat;
 	private double temp;
+	private LocalDateTime date;
 	
 	@Bean
 	public Weather weather() {
@@ -46,7 +52,8 @@ public class Weather implements Serializable {
 
 	@JsonProperty("lat")
 	public void setLat(double lat) {
-		this.lat = lat;
+		String alt = String.format("%4.2f", lat);
+		this.lat = Double.parseDouble(alt);
 	}
 
 	
@@ -72,7 +79,8 @@ public class Weather implements Serializable {
 	}
 	@JsonProperty("temp")
 	public void setTemp(double temp) {
-		this.temp = temp;
+		String alt = String.format("%5.2f", temp-273.15); //converted temperature into celsius and set the format
+		this.temp = Double.parseDouble(alt); // converted string to double
 	}
 
 	@JsonProperty("weather")
@@ -88,7 +96,8 @@ public class Weather implements Serializable {
 
 	@JsonProperty("lon")
 	public void setLon(double lon) {
-		this.lon = lon;
+		String alt = String.format("%5.2f", lon);
+		this.lon = Double.parseDouble(alt);
 	}
 	
 	@JsonProperty("coord")
@@ -100,8 +109,21 @@ public class Weather implements Serializable {
 	// Set the temperature
 	@JsonProperty("main")
 	public void setMain(Map<String,Object> main) {
-		setTemp((double) main.get("temp"));
+		setTemp((double) main.get("temp"));  // retrieved temperature from WeatherAPI
 	}
+
+	public LocalDate getDate() {
+		//System.out.println(date);
+		return LocalDate.now();
+	}
+	
+	public String getTime() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+		LocalTime localTime = LocalTime.now();
+		//System.out.println(dtf.format(localTime));   
+		return dtf.format(localTime);
+	}
+
 	
 	
 	
