@@ -20,8 +20,8 @@
     			<th>Longitude</th> 
     			<th>Weather</th> 
     			<th>Temperature(Celsius)</th> 
-    			<th>Date(IST)</th>
-    			<th>Time(IST)</th>
+    			<th>Date(GMT)</th>
+    			<th>Time(GMT)</th>
     		</tr>	
 			<tr th:each="weather,iterStat : ${weatherData}" >
 				<td><span th:text="${weather.getName()}"></span></td>
