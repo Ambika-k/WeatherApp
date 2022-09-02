@@ -37,14 +37,14 @@ import com.spring.restapi.models.WeatherUrl;
 		@Autowired
 		private WeatherUrl weatherData;
 		
-		@RequestMapping(value = "/weather",method=RequestMethod.GET )
+		@RequestMapping(value = "/customer/weather",method=RequestMethod.GET )
 		public String CityForm(Model model) {
 			
 			model.addAttribute("city", new FormCityAttribute());
 			return "formData";
 		}
 		
-		@RequestMapping(value = "/weather",method=RequestMethod.POST )
+		@RequestMapping(value = "/customer/weather",method=RequestMethod.POST )
 		public String getWeather(Model model, @ModelAttribute FormCityAttribute city) 
 				throws JsonParseException, JsonMappingException, IOException {
 			
