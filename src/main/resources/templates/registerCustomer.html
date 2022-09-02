@@ -10,11 +10,11 @@
 	<div class="container p-3 my-3 border">
 		<div class="card">
 			<div class="card-header bg-info text-black">
-				<h3>USER REGISTRATION PAGE</h3>
+				<h3>USER DETAILS</h3>
 			</div>
 
 			<div class="card-body">
-				<form th:action="@{/customer/save}" method="POST" th:object="${customer}">
+				<form th:action="@{/save}" method="POST" th:object="${customer}">
 					<input type="hidden" th:field="*{id}"/>
 					<div class="row">
 						<div class="col-2">

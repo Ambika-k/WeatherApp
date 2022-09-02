@@ -5,18 +5,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import com.spring.restapi.config.CaptchaUtil;
 import com.spring.restapi.models.Customer;
 import cn.apiclub.captcha.Captcha;
 
 @Controller
-@RequestMapping("/customer")
+//@RequestMapping("/customer")
 public class CustomerContoller {
 	//@Autowired
 	//private CustomerService customerService;
 	
-	@GetMapping("/register")
+	@GetMapping("/user")
 	public String registercustomer(Model model) {
 		Customer customer = new Customer();
 		getCaptcha(customer);
