@@ -7,6 +7,9 @@
  * 
  * public interface CustomerService {
  * 
- * void createCustomer(Customer customer); List<Customer> getAllCustomers();
+ * void createCustomer(Customer customer);
+ * 
+ * List<Customer> getAllCustomers();
+ * 
  * Optional<Customer> getOneCustomer(int id); }
  */

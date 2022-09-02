@@ -2,12 +2,12 @@ package com.spring.restapi.models;
 
 //@Entity
 public class Customer {
-	//@Id
-	//@GeneratedValue
-	private int id;
-	private String name;
-	private String email;
-	
+//	@Id
+//	@GeneratedValue
+//	private int id;
+//	private String name;
+//	private String email;
+//	
 	//@Transient
 	private String captcha;
 	
@@ -21,39 +21,24 @@ public class Customer {
 		super();
 	}
 
-	public Customer( String name, String email, String captcha, String realCaptcha, String hiddenCaptcha) {
-		super();
-		this.name = name;
-		this.email = email;
-		this.captcha = captcha;
-		this.realCaptcha = realCaptcha;
-		this.hiddenCaptcha = hiddenCaptcha;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
+	/*
+	 * public Customer( String name, String email, String captcha, String
+	 * realCaptcha, String hiddenCaptcha) { super(); this.name = name; this.email =
+	 * email; this.captcha = captcha; this.realCaptcha = realCaptcha;
+	 * this.hiddenCaptcha = hiddenCaptcha; }
+	 * 
+	 * public int getId() { return id; }
+	 * 
+	 * public void setId(int id) { this.id = id; }
+	 * 
+	 * public String getName() { return name; }
+	 * 
+	 * public void setName(String name) { this.name = name; }
+	 * 
+	 * public String getEmail() { return email; }
+	 * 
+	 * public void setEmail(String email) { this.email = email; }
+	 */
 	public String getCaptcha() {
 		return captcha;
 	}
@@ -78,11 +63,11 @@ public class Customer {
 		this.hiddenCaptcha = hiddenCaptcha;
 	}
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", captcha=" + captcha + ", realCaptcha="
-				+ realCaptcha + ", hiddenCaptcha=" + hiddenCaptcha + "]";
-	}
+	/*
+	 * @Override public String toString() { return "User [id=" + id + ", name=" +
+	 * name + ", email=" + email + ", captcha=" + captcha + ", realCaptcha=" +
+	 * realCaptcha + ", hiddenCaptcha=" + hiddenCaptcha + "]"; }
+	 */
 
 	
 }
