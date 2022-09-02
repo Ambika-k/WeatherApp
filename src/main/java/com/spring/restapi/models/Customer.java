@@ -1,25 +1,20 @@
 package com.spring.restapi.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Transient;
-
-@Entity
+//@Entity
 public class Customer {
-	@Id
-	@GeneratedValue
+	//@Id
+	//@GeneratedValue
 	private int id;
 	private String name;
 	private String email;
 	
-	@Transient
+	//@Transient
 	private String captcha;
 	
-	@Transient
+	//@Transient
 	private String realCaptcha;
 	
-	@Transient
+	//@Transient
 	private String hiddenCaptcha;
 	
 	public Customer() {
