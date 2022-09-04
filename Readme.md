@@ -3,7 +3,7 @@
 This is a Springboot application and is used to provide product and weather services to user. Product and weather services were independent of each other.
 This application consists of Weather app
 
-### Gobal website
+### Global website
 * https://ambikaweatherapp.herokuapp.com/user
 
 ### PREREQUISITES:
