@@ -13,6 +13,10 @@ This application consists of Weather app
 * Visit https://openweathermap.org/appid 
 * SignUp, Select the package and generate API keys
 
+
+### CAPTCHA MODULE
+* To check if not robot.
+
 ### WEATHER MODULE
 This module is making use of Thymeleaf template.
 It consists of two methods.
@@ -30,7 +34,7 @@ It consists of two methods.
 * Based on url and apikey , it gets access to OpenWeatherAPI and retrieves the weather details from it based on city.
 
 #### [OUTPUT] Following details will be displayed: 
-* City, Latitude, Longitude, Weather description.
+* City, Latitude, Longitude, Weather, Date and Time description.
 
 
 #### formData.html 
