@@ -3,7 +3,8 @@
 This is a Springboot application and is used to provide product and weather services to user. Product and weather services were independent of each other.
 This application consists of Weather app
 
-
+### Gobal website
+* https://ambikaweatherapp.herokuapp.com/user
 
 ### PREREQUISITES:
  * JDK 1.8.X 
@@ -12,7 +13,6 @@ This application consists of Weather app
 ### Generating keys 
 * Visit https://openweathermap.org/appid 
 * SignUp, Select the package and generate API keys
-
 
 ### CAPTCHA MODULE
 * To check if not robot.
